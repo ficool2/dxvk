@@ -91,7 +91,9 @@ namespace dxvk {
     VkBool32                                                  khrCalibratedTimestamps         = VK_FALSE;
     VkPhysicalDeviceFaultFeaturesKHR                          khrDeviceFault                  = { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FAULT_FEATURES_KHR };
     VkPhysicalDeviceDynamicRenderingLocalReadFeatures         khrDynamicRenderingLocalRead    = { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DYNAMIC_RENDERING_LOCAL_READ_FEATURES_KHR };
+    VkBool32                                                  khrExternalMemoryFd             = VK_FALSE;
     VkBool32                                                  khrExternalMemoryWin32          = VK_FALSE;
+    VkBool32                                                  khrExternalSemaphoreFd          = VK_FALSE;
     VkBool32                                                  khrExternalSemaphoreWin32       = VK_FALSE;
     VkBool32                                                  khrIncrementalPresent           = VK_FALSE;
     VkBool32                                                  khrLoadStoreOpNone              = VK_FALSE;
@@ -169,7 +171,9 @@ namespace dxvk {
     VkExtensionProperties khrCalibratedTimestamps           = vk::makeExtension(VK_KHR_CALIBRATED_TIMESTAMPS_EXTENSION_NAME);
     VkExtensionProperties khrDeviceFault                    = vk::makeExtension(VK_KHR_DEVICE_FAULT_EXTENSION_NAME);
     VkExtensionProperties khrDynamicRenderingLocalRead      = vk::makeExtension(VK_KHR_DYNAMIC_RENDERING_LOCAL_READ_EXTENSION_NAME);
+    VkExtensionProperties khrExternalMemoryFd               = vk::makeExtension(VK_KHR_EXTERNAL_MEMORY_FD_EXTENSION_NAME);
     VkExtensionProperties khrExternalMemoryWin32            = vk::makeExtension(VK_KHR_EXTERNAL_MEMORY_WIN32_EXTENSION_NAME);
+    VkExtensionProperties khrExternalSemaphoreFd            = vk::makeExtension(VK_KHR_EXTERNAL_SEMAPHORE_FD_EXTENSION_NAME);
     VkExtensionProperties khrExternalSemaphoreWin32         = vk::makeExtension(VK_KHR_EXTERNAL_SEMAPHORE_WIN32_EXTENSION_NAME);
     VkExtensionProperties khrIncrementalPresent             = vk::makeExtension(VK_KHR_INCREMENTAL_PRESENT_EXTENSION_NAME);
     VkExtensionProperties khrLoadStoreOpNone                = vk::makeExtension(VK_KHR_LOAD_STORE_OP_NONE_EXTENSION_NAME);

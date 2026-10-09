@@ -48,7 +48,9 @@ namespace dxvk {
     HANDLE_EXT(khrCalibratedTimestamps);           \
     HANDLE_EXT(khrDeviceFault);                    \
     HANDLE_EXT(khrDynamicRenderingLocalRead);      \
+    HANDLE_EXT(khrExternalMemoryFd);               \
     HANDLE_EXT(khrExternalMemoryWin32);            \
+    HANDLE_EXT(khrExternalSemaphoreFd);            \
     HANDLE_EXT(khrExternalSemaphoreWin32);         \
     HANDLE_EXT(khrIncrementalPresent);             \
     HANDLE_EXT(khrLoadStoreOpNone);                \
@@ -1052,6 +1054,9 @@ namespace dxvk {
       /* External memory features for wine */
       ENABLE_EXT(khrExternalMemoryWin32, false),
       ENABLE_EXT(khrExternalSemaphoreWin32, false),
+      /* for Qt */
+      ENABLE_EXT(khrExternalMemoryFd, false),
+      ENABLE_EXT(khrExternalSemaphoreFd, false),
 
       /* Dirty rects for presentation */
       ENABLE_EXT(khrIncrementalPresent, false),
